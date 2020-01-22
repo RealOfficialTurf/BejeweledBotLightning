@@ -67,17 +67,6 @@ try:
                     board[x,y]=5
                 else:
                     board[x,y]=0
-##                if board[x,y] > 0:
-##                    color = image.getpixel((lightningboard[0]+p5sec[0]+(tilesize*x),lightningboard[1]+p5sec[1]+(tilesize*y)))
-##                    cpick = 1000+(color[0]//64)*100+(color[1]//64)*10+(color[2]//64)
-##                    if cpick == 1000:
-##                        board[x,y]=board[x,y]+10
-##                    color = image.getpixel((lightningboard[0]+p10sec[0]+(tilesize*x),lightningboard[1]+p10sec[1]+(tilesize*y)))
-##                    cpick = 1000+(color[0]//64)*100+(color[1]//64)*10+(color[2]//64)
-##                    if cpick == 1000:
-##                        board[x,y]=board[x,y]+20
-##                board[x,y] = findcolor(cpick)
-                
                 list.append(findcname(cpick))
                 if board[x,y] == 0:
                     unknowncount=unknowncount+1
